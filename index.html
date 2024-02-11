@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact_page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="header">
-        <h1>Contact Form</h1>
-        <p>Please fill in the form below with your details</p>
-        <hr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact_Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h2>Contact Us</h2>
+          <form action="#" method="post" id="form-control">
+              <input type="text" name="name" id="name" placeholder="Your Name" required /> 
+              <input type="email" name="email" id="email" placeholder="Your Email" required />
+              <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+          <div id="status"></div>
     </div>
-    <form action="#" method="post" class="form-control">
-        <div>
-            <label for="name">
-                Name
-            </label><br />
-            <input type="text" name="name" id="name" placeholder="Enter your Fullname" required>
-        </div>
-        <div>
-            <label for="email">
-                Email
-            </label><br />
-            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-        </div>
-        <div>
-            <label for="Message">
-                Your Message
-            </label><br />
-            <textarea name="Message" id="" cols="30" rows="10"></textarea>
-        </div>
-        <button>Send</button>
-    </form>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
