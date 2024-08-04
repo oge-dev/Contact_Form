@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set the `replyto` input field's value
     document.getElementById("replyto").value = emailInput;
 
+    // Get the user's email input
+    const nameInput = document.getElementById("name").value;
+
+    // Set the `from_name` input field's value
+    document.getElementById("from_name").value = nameInput;
+
+
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -30,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.status == 200) {
           result.innerHTML = json.message;
           console.log(response);
-          setTimeout(() => {
+          setTimeout((e) => {
+            e.preventDefault();
             window.location.href = "https://web3forms.com/success"; // Custom success page URL
           }, 2000);
         } else {
