@@ -37,10 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.status == 200) {
           result.innerHTML = json.message;
           console.log(response);
+
           setTimeout((e) => {
             e.preventDefault();
             window.location.href = "https://web3forms.com/success"; // Custom success page URL
           }, 2000);
+          
         } else {
           console.log(response);
           result.innerHTML = json.message;
