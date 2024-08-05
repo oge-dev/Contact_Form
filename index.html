@@ -13,14 +13,13 @@
     <div class="form-container">
       <h1>Contact Us</h1>
       <form method="POST" id="form">
-       
         <!-- Add your Access Key -->
         <input
           type="hidden"
           name="access_key"
           value="8ec65f49-24b9-433f-8ead-a63fef65ef01"
         />
-  
+
         <!-- customize the Form Name of the email you receive  -->
         <input type="hidden" id="from_name" name="from_name" value="" />
         <!-- subject of the email -->
@@ -38,10 +37,16 @@
         />
         <!-- `replyto` email will be the given value. -->
         <input type="hidden" name="replyto" id="replyto" value="" />
-  
+
         <!-- Custom Form Data -->
         <div class="input-group">
-          <input type="text" id="name" name="name" required placeholder="Your Name" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your Name"
+          />
         </div>
         <div class="input-group">
           <input
@@ -52,9 +57,14 @@
             placeholder="Your Email"
           />
         </div>
-  
+
         <div class="input-group">
-          <textarea name="message" rows="5" required placeholder="Your Message"></textarea>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            placeholder="Your Message"
+          ></textarea>
         </div>
         <!-- hCaptcha -->
         <div
@@ -66,16 +76,11 @@
           aria-required="true"
         ></div>
         <!-- submit button -->
-         <div class="btn-wrapper">
-          <button id="btn" type="submit">
-            Submit Form
-           </button>
-         </div>
-        
+        <button id="btn" type="submit">Submit</button>
+
         <div id="result"></div>
       </form>
-  
     </div>
-      <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
