@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log(response);
 
           setTimeout((e) => {
-            e.preventDefault();
             window.location.href = "https://web3forms.com/success"; // Custom success page URL
           }, 2000);
           
