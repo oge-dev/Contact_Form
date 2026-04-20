@@ -19,4 +19,4 @@ This repository contains a simple contact form implemented using HTML, CSS, and 
 - hCaptcha
 
 ## Live Demo
--  [Contact_Form](https://geliettech.github.io/Contact_Form/)
+-  [Contact_Form](https://web3contactform.netlify.app/)
